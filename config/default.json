@@ -1,0 +1,7 @@
+{
+  "source_dir": "C:/Users/irisc/GolandProjects/gobackup/testdata/source",
+  "backup_dir": "C:/Users/irisc/GolandProjects/gobackup/testdata/backup",
+  "modified_minutes": 0,
+  "max_concurrency": 5,
+  "server_port": 8080
+}

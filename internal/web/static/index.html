@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gobackup Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #1e1e2f;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        h1 { color: #f0a500; }
+        #controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        #progressContainer {
+            width: 80%;
+            background-color: #333;
+            border-radius: 10px;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+        #progressBar {
+            height: 30px;
+            width: 0%;
+            background-color: #f0a500;
+            text-align: center;
+            line-height: 30px;
+            color: #000;
+            font-weight: bold;
+        }
+        button {
+            background-color: #f0a500;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        #logs {
+            width: 80%;
+            height: 300px;
+            background-color: #111;
+            overflow-y: scroll;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Gobackup Web Dashboard</h1>
+<div id="controls">
+    <button id="startBackup">Iniciar Backup</button>
+    <button id="resetApp" style="display:none;">Reiniciar</button>
+</div>
+
+<div id="progressContainer">
+    <div id="progressBar">0%</div>
+</div>
+
+<div id="logs"></div>
+
+<script>
+    const progressBar = document.getElementById("progressBar");
+    const logsDiv = document.getElementById("logs");
+    const startBtn = document.getElementById("startBackup");
+    const resetBtn = document.getElementById("resetApp");
+
+    startBtn.addEventListener("click", () => {
+        // Deshabilitar el botón y limpiar los logs al iniciar
+        startBtn.disabled = true;
+        logsDiv.innerHTML = '';
+        appendLog("[INFO] Backup iniciado...");
+
+        fetch("/backup", { method: "POST" })
+            .then(res => res.json())
+            .then(data => {
+                appendLog("[INFO] " + data.message);
+                // El servidor no devuelve los logs, el cliente los genera
+            })
+            .catch(err => {
+                appendLog("[ERROR] " + err);
+                startBtn.disabled = false;
+            });
+    });
+
+    // Nueva función para reiniciar
+    resetBtn.addEventListener("click", () => {
+        progressBar.style.width = "0%";
+        progressBar.textContent = "0%";
+        logsDiv.innerHTML = '';
+        startBtn.disabled = false;
+        resetBtn.style.display = "none";
+        appendLog("[INFO] Aplicación reiniciada. Lista para el próximo backup.");
+    });
+
+    function appendLog(msg) {
+        const p = document.createElement("p");
+        p.textContent = msg;
+        logsDiv.appendChild(p);
+        logsDiv.scrollTop = logsDiv.scrollHeight;
+    }
+
+    function updateStatus() {
+        fetch("/status")
+            .then(res => res.json())
+            .then(data => {
+                const { TotalFiles, FilesCopied, Errors, InProgress } = data;
+
+                let percent = 0;
+                if (TotalFiles > 0) {
+                    percent = Math.round((FilesCopied / TotalFiles) * 100);
+                } else if (!InProgress) {
+                    // Si no hay archivos y el proceso no está en progreso, es 100%
+                    percent = 100;
+                }
+
+                progressBar.style.width = percent + "%";
+                progressBar.textContent = percent + "%";
+
+                if (Errors && Errors.length > 0) {
+                    Errors.forEach(err => appendLog("[ERROR] " + err));
+                }
+
+                if (InProgress) {
+                    appendLog(`[INFO] Backup en progreso: ${FilesCopied}/${TotalFiles}`);
+                } else if (TotalFiles > 0 && FilesCopied === TotalFiles) {
+                    // Muestra el mensaje solo cuando el backup realmente terminó
+                    appendLog("[INFO] Backup completado!");
+                    startBtn.disabled = false; // Habilitar el botón de inicio de nuevo
+                    resetBtn.style.display = "inline-block"; // Mostrar el botón de reinicio
+                } else if (!InProgress && TotalFiles === 0) {
+                    // Caso para 0 archivos
+                    appendLog("[INFO] Backup completado. No se encontraron archivos para copiar.");
+                    startBtn.disabled = false;
+                    resetBtn.style.display = "inline-block";
+                }
+            })
+            .catch(err => console.error(err));
+    }
+
+    setInterval(updateStatus, 2000);
+</script>
+
+</body>
+</html>
