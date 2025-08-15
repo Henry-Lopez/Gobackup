@@ -156,3 +156,51 @@
 2025-08-13 18:22:32 [INFO] Archivo copiado y verificado: archivo3.txt
 2025-08-13 18:22:32 [INFO] Archivo copiado y verificado: archivo2.txt
 2025-08-13 18:22:32 [INFO] Archivo copiado y verificado: archivo1.txt
+2025-08-13 19:45:59 [INFO] ✅ Logger inicializado correctamente
+2025-08-13 19:45:59 [DEBUG] Logger en modo DEBUG activo
+2025-08-13 19:46:25 [INFO] Escaneando directorio: C:/Users/irisc/GolandProjects/gobackup/testdata/source (últimos 0 minutos)
+2025-08-13 19:46:25 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\GolandProjects\gobackup\testdata\source\archivo1.txt
+2025-08-13 19:46:25 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\GolandProjects\gobackup\testdata\source\archivo2.txt
+2025-08-13 19:46:25 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\GolandProjects\gobackup\testdata\source\archivo3.txt
+2025-08-13 19:46:25 [INFO] Escaneo completado. Archivos encontrados: 3
+2025-08-13 19:46:25 [INFO] Archivo copiado y verificado: archivo3.txt
+2025-08-13 19:46:25 [INFO] Archivo copiado y verificado: archivo1.txt
+2025-08-13 19:46:25 [INFO] Archivo copiado y verificado: archivo2.txt
+2025-08-15 12:50:03 [INFO] ✅ Logger inicializado correctamente
+2025-08-15 12:50:03 [DEBUG] Logger en modo DEBUG activo
+2025-08-15 12:51:21 [INFO] Escaneando directorio: C:/Users/irisc/GolandProjects/gobackup/testdata/source (últimos 0 minutos)
+2025-08-15 12:51:21 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\GolandProjects\gobackup\testdata\source\archivo1.txt
+2025-08-15 12:51:21 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\GolandProjects\gobackup\testdata\source\archivo2.txt
+2025-08-15 12:51:21 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\GolandProjects\gobackup\testdata\source\archivo3.txt
+2025-08-15 12:51:21 [INFO] Escaneo completado. Archivos encontrados: 3
+2025-08-15 12:51:21 [INFO] Archivo copiado y verificado: archivo3.txt
+2025-08-15 12:51:21 [INFO] Archivo copiado y verificado: archivo1.txt
+2025-08-15 12:51:21 [INFO] Archivo copiado y verificado: archivo2.txt
+2025-08-15 12:55:11 [INFO] ✅ Logger inicializado correctamente
+2025-08-15 12:55:11 [DEBUG] Logger en modo DEBUG activo
+2025-08-15 13:09:54 [INFO] ✅ Logger inicializado correctamente
+2025-08-15 13:09:54 [DEBUG] Logger en modo DEBUG activo
+2025-08-15 13:11:55 [INFO] ✅ Logger inicializado correctamente
+2025-08-15 13:11:55 [DEBUG] Logger en modo DEBUG activo
+2025-08-15 13:13:04 [INFO] ✅ Logger inicializado correctamente
+2025-08-15 13:13:04 [DEBUG] Logger en modo DEBUG activo
+2025-08-15 13:13:56 [INFO] ✅ Logger inicializado correctamente
+2025-08-15 13:13:56 [DEBUG] Logger en modo DEBUG activo
+2025-08-15 13:16:52 [INFO] ✅ Logger inicializado correctamente
+2025-08-15 13:16:52 [DEBUG] Logger en modo DEBUG activo
+2025-08-15 13:16:59 [INFO] Escaneando directorio: C:/Users/irisc/GolandProjects/gobackup/testdata/source (últimos 0 minutos)
+2025-08-15 13:16:59 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\GolandProjects\gobackup\testdata\source\archivo1.txt
+2025-08-15 13:16:59 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\GolandProjects\gobackup\testdata\source\archivo2.txt
+2025-08-15 13:16:59 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\GolandProjects\gobackup\testdata\source\archivo3.txt
+2025-08-15 13:16:59 [INFO] Escaneo completado. Archivos encontrados: 3
+2025-08-15 13:16:59 [INFO] Archivo copiado y verificado: archivo2.txt
+2025-08-15 13:16:59 [INFO] Archivo copiado y verificado: archivo1.txt
+2025-08-15 13:16:59 [INFO] Archivo copiado y verificado: archivo3.txt
+2025-08-15 13:17:19 [INFO] Escaneando directorio: C:/Users/irisc/GolandProjects/gobackup/testdata/source (últimos 0 minutos)
+2025-08-15 13:17:19 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\GolandProjects\gobackup\testdata\source\archivo1.txt
+2025-08-15 13:17:19 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\GolandProjects\gobackup\testdata\source\archivo2.txt
+2025-08-15 13:17:19 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\GolandProjects\gobackup\testdata\source\archivo3.txt
+2025-08-15 13:17:19 [INFO] Escaneo completado. Archivos encontrados: 3
+2025-08-15 13:17:19 [INFO] Archivo copiado y verificado: archivo3.txt
+2025-08-15 13:17:19 [INFO] Archivo copiado y verificado: archivo2.txt
+2025-08-15 13:17:19 [INFO] Archivo copiado y verificado: archivo1.txt
