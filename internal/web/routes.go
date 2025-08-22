@@ -1,43 +1,54 @@
 package web
 
 import (
-	"gobackup/internal/backup"
-	"net/http"
-
 	"github.com/gin-gonic/gin"
+	"gobackup/internal/backup"
 )
 
-func setupRoutes(r *gin.Engine) {
-	// Endpoint de bienvenida
-	r.GET("/api/welcome", func(c *gin.Context) {
-		c.JSON(http.StatusOK, gin.H{
-			"message": "Welcome to Gobackup Web Server!",
-		})
+// setupRoutes configura todas las rutas del servidor web.
+func setupRoutes(router *gin.Engine) {
+	// Sirve los archivos estáticos desde el directorio 'static'
+	router.Static("/static", "./internal/web/static")
+
+	// Ruta para el archivo principal (index.html)
+	router.GET("/", func(c *gin.Context) {
+		c.File("./internal/web/static/index.html")
 	})
 
-	// Endpoint para obtener el estado actual del backup
-	r.GET("/status", func(c *gin.Context) {
-		status := backup.Status.Get()
-		c.JSON(http.StatusOK, status)
-	})
+	// Ruta para iniciar el backup
+	router.POST("/backup", handleBackup)
 
-	// Endpoint para iniciar un backup (POST /backup)
-	r.POST("/backup", func(c *gin.Context) {
-		// La configuración ya está cargada y no debe ser reinicializada.
+	// Ruta para el estado del backup
+	router.GET("/status", handleStatus)
+}
 
-		// Ejecutar backup en una goroutine para no bloquear el servidor
-		go func() {
-			if err := backup.RunBackup(); err != nil {
-				backup.Status.SetError(err.Error())
-			} else {
-				backup.Status.SetDone()
-			}
-		}()
+// handleBackup maneja la solicitud de backup
+func handleBackup(c *gin.Context) {
+	var req backupRequest
+	if err := c.ShouldBindJSON(&req); err != nil {
+		c.JSON(400, gin.H{"error": err.Error()})
+		return
+	}
 
-		c.JSON(http.StatusAccepted, gin.H{
-			"message": "Backup iniciado",
-			"source":  backup.SourceDir,
-			"target":  backup.BackupDir,
-		})
-	})
+	// Aquí está la solución universal: usar directamente las rutas de la solicitud
+	// El frontend ya envió la ruta completa, no necesitas manipularla
+	go func() {
+		if err := backup.RunBackup(req.Source, req.Destination); err != nil {
+			backup.Status.SetError(err.Error())
+		}
+	}()
+
+	c.JSON(200, gin.H{"message": "Backup iniciado"})
+}
+
+// backupRequest representa la estructura de la solicitud de backup.
+type backupRequest struct {
+	Source      string `json:"source"`
+	Destination string `json:"destination"`
+}
+
+// handleStatus maneja la solicitud de estado del backup.
+func handleStatus(c *gin.Context) {
+	status := backup.Status.Get()
+	c.JSON(200, status)
 }

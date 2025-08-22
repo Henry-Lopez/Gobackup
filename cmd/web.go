@@ -11,7 +11,8 @@ var webCmd = &cobra.Command{
 	Short: "Run gobackup web server",
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("Starting web server on http://localhost:8080 ...")
-		web.StartServer()
+		// Pasa la configuración global Cfg a la función de inicio del servidor.
+		web.StartServer(Cfg)
 	},
 }
 

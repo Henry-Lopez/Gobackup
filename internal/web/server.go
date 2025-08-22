@@ -1,27 +1,21 @@
 package web
 
 import (
+	"fmt"
 	"github.com/gin-gonic/gin"
+	"gobackup/internal/config"
 	"log"
 )
 
 // StartServer inicia el servidor web de Gobackup
-func StartServer() {
+func StartServer(cfg *config.Config) {
 	router := gin.Default()
 
-	// Servir archivos estáticos (CSS, JS)
-	router.Static("/static", "./internal/web/static")
-
-	// Servir el dashboard HTML principal
-	router.GET("/", func(c *gin.Context) {
-		c.File("./internal/web/static/index.html")
-	})
-
-	// Llamar a setupRoutes definido en routes.go para endpoints API
+	// Configura tus rutas aquí
 	setupRoutes(router)
 
-	// Arrancar servidor en puerto 8080
-	if err := router.Run(":8080"); err != nil {
+	// Usa el puerto de la configuración
+	if err := router.Run(fmt.Sprintf(":%d", cfg.ServerPort)); err != nil {
 		log.Fatalf("Error starting server: %v", err)
 	}
 }

@@ -1,106 +1,190 @@
-const progressBar = document.getElementById("progressBar");
-const logsDiv = document.getElementById("logs");
-const startBtn = document.getElementById("startBackup");
-const resetBtn = document.getElementById("resetApp");
-const statusDot = document.getElementById("statusDot");
-const statusText = document.getElementById("statusText");
-const totalFilesEl = document.getElementById("totalFiles");
-const copiedFilesEl = document.getElementById("copiedFiles");
-const errorCountEl = document.getElementById("errorCount");
-const progressPercentEl = document.getElementById("progressPercent");
+document.addEventListener('DOMContentLoaded', () => {
+    // Definir los elementos del DOM con los IDs actualizados
+    const sourceBtn = document.getElementById('select-source-btn');
+    const destBtn = document.getElementById('select-dest-btn');
+    const backupBtn = document.getElementById('backup-btn');
+    const sourcePathInput = document.getElementById('source-path');
+    const destPathInput = document.getElementById('dest-path');
+    const statusText = document.getElementById('statusText');
+    const progressBar = document.getElementById('progressBar');
+    const totalFilesDisplay = document.getElementById('total-files');
+    const copiedFilesDisplay = document.getElementById('copied-files');
+    const errorsDisplay = document.getElementById('errors');
+    const progressPercentDisplay = document.getElementById('progressPercent');
+    const activityLog = document.getElementById('activity-log');
+    const clearLogBtn = document.getElementById('clear-log-btn');
+    const reconnectBtn = document.getElementById('reconnect-btn');
+    const restartBtn = document.getElementById('restart-btn');
 
-startBtn.addEventListener("click", () => {
-    startBtn.disabled = true;
-    logsDiv.innerHTML = '';
-    appendLog("[INFO] Iniciando proceso de respaldo...", "info");
+    // URL base de la API
+    const API_BASE_URL = window.location.origin;
 
-    statusDot.classList.remove("active");
-    statusText.textContent = "Iniciando respaldo...";
+    // Función para manejar la selección de la carpeta de origen
+    sourceBtn.addEventListener('click', async () => {
+        try {
+            const dirHandle = await window.showDirectoryPicker();
+            // Llenar el input con la ruta completa usando prompt()
+            const sourcePath = prompt("Por favor, introduce la ruta completa de la carpeta de origen:", dirHandle.name);
+            if (sourcePath) {
+                sourcePathInput.value = sourcePath;
+                logActivity(`Carpeta de origen seleccionada: ${sourcePath}`);
+                updateBackupButtonState();
+            }
+        } catch (err) {
+            logError(`Error al seleccionar la carpeta de origen: ${err}`);
+        }
+    });
 
-    totalFilesEl.textContent = "0";
-    copiedFilesEl.textContent = "0";
-    errorCountEl.textContent = "0";
-    progressPercentEl.textContent = "0%";
+    // Función para manejar la selección de la carpeta de destino
+    destBtn.addEventListener('click', async () => {
+        try {
+            const dirHandle = await window.showDirectoryPicker();
+            // Llenar el input con la ruta completa usando prompt()
+            const destPath = prompt("Por favor, introduce la ruta completa de la carpeta de destino:", dirHandle.name);
+            if (destPath) {
+                destPathInput.value = destPath;
+                logActivity(`Carpeta de destino seleccionada: ${destPath}`);
+                updateBackupButtonState();
+            }
+        } catch (err) {
+            logError(`Error al seleccionar la carpeta de destino: ${err}`);
+        }
+    });
 
-    fetch("/backup", { method: "POST" })
-        .then(res => res.json())
-        .then(data => {
-            appendLog("[INFO] " + data.message, "info");
-        })
-        .catch(err => {
-            appendLog("[ERROR] Error al iniciar el respaldo: " + err, "error");
-            startBtn.disabled = false;
-            statusText.textContent = "Error al iniciar";
-        });
+    // Actualiza el estado del botón de backup
+    function updateBackupButtonState() {
+        const currentSourcePath = sourcePathInput.value.trim();
+        const currentDestPath = destPathInput.value.trim();
+
+        if (currentSourcePath && currentDestPath) {
+            backupBtn.disabled = false;
+        } else {
+            backupBtn.disabled = true;
+        }
+    }
+
+    // Función para manejar el inicio del backup
+    backupBtn.addEventListener('click', async () => {
+        const currentSourcePath = sourcePathInput.value.trim();
+        const currentDestPath = destPathInput.value.trim();
+
+        if (!currentSourcePath || !currentDestPath) {
+            logError('Por favor, selecciona o introduce las carpetas de origen y destino.');
+            return;
+        }
+
+        try {
+            logActivity('Iniciando backup...');
+            const response = await fetch(`${API_BASE_URL}/backup`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    source: currentSourcePath,
+                    destination: currentDestPath
+                })
+            });
+
+            if (!response.ok) {
+                const errorData = await response.json();
+                throw new Error(errorData.error || 'Error en la solicitud de backup');
+            }
+
+            logActivity('Backup iniciado correctamente.');
+            backupBtn.disabled = true;
+
+        } catch (err) {
+            logError(`Error al iniciar el backup: ${err.message}`);
+        }
+    });
+
+    // Función para manejar el reinicio
+    restartBtn.addEventListener('click', () => {
+        sourcePathInput.value = '';
+        destPathInput.value = '';
+        logActivity('Reiniciando la aplicación...');
+        updateBackupButtonState();
+    });
+
+    // Función para manejar el log de actividad
+    function logActivity(message) {
+        const timestamp = new Date().toLocaleTimeString();
+        const logItem = document.createElement('div');
+        logItem.textContent = `[INFO] [${timestamp}] ${message}`;
+        activityLog.appendChild(logItem);
+        activityLog.scrollTop = activityLog.scrollHeight;
+    }
+
+    // Función para manejar errores en el log
+    function logError(message) {
+        const timestamp = new Date().toLocaleTimeString();
+        const logItem = document.createElement('div');
+        logItem.textContent = `[ERROR] [${timestamp}] ${message}`;
+        logItem.style.color = 'red';
+        activityLog.appendChild(logItem);
+        activityLog.scrollTop = activityLog.scrollHeight;
+    }
+
+    // Función para limpiar el log de actividad
+    clearLogBtn.addEventListener('click', () => {
+        activityLog.innerHTML = '';
+        logActivity('Log de actividad limpiado.');
+    });
+
+    // Función para actualizar el estado del UI
+    function updateStatusUI(status) {
+        if (status.inProgress) {
+            statusText.textContent = 'En progreso...';
+            document.getElementById('progressBar').style.display = 'block';
+            backupBtn.disabled = true;
+            restartBtn.disabled = true;
+        } else {
+            statusText.textContent = 'Inactivo';
+            document.getElementById('progressBar').style.display = 'none';
+            backupBtn.disabled = false;
+            restartBtn.disabled = false;
+        }
+
+        totalFilesDisplay.textContent = status.TotalFiles;
+        copiedFilesDisplay.textContent = status.FilesCopied;
+        errorsDisplay.textContent = status.Errors ? status.Errors.length : 0;
+
+        const progressPercentage = status.TotalFiles > 0 ? (status.FilesCopied / status.TotalFiles) * 100 : 0;
+        document.getElementById('progressBar').style.width = `${progressPercentage}%`;
+        progressPercentDisplay.textContent = `${progressPercentage.toFixed(0)}%`;
+
+        if (status.Errors && status.Errors.length > 0) {
+            logError(`Backup completado con ${status.Errors.length} errores.`);
+            status.Errors.forEach(err => logError(`- ${err}`));
+        } else if (!status.inProgress && status.TotalFiles > 0) {
+            logActivity('Backup completado exitosamente.');
+        }
+    }
+
+    // Bucle para obtener el estado del servidor
+    async function fetchStatus() {
+        try {
+            const response = await fetch(`${API_BASE_URL}/status`);
+            if (!response.ok) {
+                throw new Error('Error al obtener el estado del servidor');
+            }
+            const status = await response.json();
+            updateStatusUI(status);
+        } catch (err) {
+            logError(`Error de conexión: ${err.message}. Reintentando...`);
+        }
+    }
+
+    // Iniciar la actualización del estado cada 2 segundos
+    setInterval(fetchStatus, 2000);
+
+    // Conectar/Reconectar
+    reconnectBtn.addEventListener('click', () => {
+        logActivity('Reconectando...');
+        fetchStatus();
+    });
+
+    // Inicializar el estado de los botones
+    updateBackupButtonState();
 });
-
-resetBtn.addEventListener("click", () => {
-    progressBar.style.width = "0%";
-    progressBar.textContent = "0%";
-    logsDiv.innerHTML = '';
-    startBtn.disabled = false;
-    resetBtn.style.display = "none";
-    statusDot.classList.remove("active");
-    statusText.textContent = "Listo para iniciar respaldo";
-    progressPercentEl.textContent = "0%";
-    appendLog("[INFO] Aplicación reiniciada. Lista para el próximo respaldo.", "info");
-});
-
-function appendLog(msg, type = "info") {
-    const p = document.createElement("p");
-    p.textContent = msg;
-    p.setAttribute("data-type", type);
-    logsDiv.appendChild(p);
-    logsDiv.scrollTop = logsDiv.scrollHeight;
-}
-
-function updateStatus() {
-    fetch("/status")
-        .then(res => res.json())
-        .then(data => {
-            const { TotalFiles, FilesCopied, Errors, InProgress } = data;
-
-            totalFilesEl.textContent = TotalFiles;
-            copiedFilesEl.textContent = FilesCopied;
-            errorCountEl.textContent = Errors ? Errors.length : 0;
-
-            let percent = 0;
-            if (TotalFiles > 0) {
-                percent = Math.round((FilesCopied / TotalFiles) * 100);
-            } else if (!InProgress) {
-                percent = 100;
-            }
-
-            progressBar.style.width = percent + "%";
-            progressBar.textContent = percent + "%";
-            progressPercentEl.textContent = percent + "%";
-
-            if (Errors && Errors.length > 0) {
-                Errors.forEach(err => appendLog("[ERROR] " + err, "error"));
-            }
-
-            if (InProgress) {
-                appendLog(`[INFO] Respaldo en progreso: ${FilesCopied}/${TotalFiles} archivos`, "info");
-                statusDot.classList.add("active");
-                statusText.textContent = "Respaldo en progreso";
-            } else if (TotalFiles > 0 && FilesCopied === TotalFiles) {
-                appendLog("[ÉXITO] Respaldo completado correctamente!", "success");
-                startBtn.disabled = false;
-                resetBtn.style.display = "inline-block";
-                statusDot.classList.remove("active");
-                statusText.textContent = "Respaldo completado";
-            } else if (!InProgress && TotalFiles === 0) {
-                appendLog("[INFO] Respaldo completado. No se encontraron archivos para copiar.", "info");
-                startBtn.disabled = false;
-                resetBtn.style.display = "inline-block";
-                statusDot.classList.remove("active");
-                statusText.textContent = "Respaldo completado (0 archivos)";
-            }
-        })
-        .catch(err => {
-            console.error(err);
-            appendLog("[ERROR] No se pudo obtener el estado del respaldo", "error");
-        });
-}
-
-setInterval(updateStatus, 2000);

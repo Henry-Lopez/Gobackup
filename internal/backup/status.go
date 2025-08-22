@@ -13,6 +13,7 @@ type BackupStatus struct {
 var Status = &BackupStatus{}
 
 // Reset resetea el estado para un nuevo backup
+// Ahora recibe el número total de archivos.
 func (s *BackupStatus) Reset(total int) {
 	s.mu.Lock()
 	defer s.mu.Unlock()
@@ -63,4 +64,18 @@ func (s *BackupStatus) Get() BackupStatus {
 		Errors:      errorsCopy,
 		InProgress:  s.InProgress,
 	}
+}
+
+// NUEVA FUNCIÓN: SetTotalFiles, para una mejor gestión de estado
+func (s *BackupStatus) SetTotalFiles(total int) {
+	s.mu.Lock()
+	defer s.mu.Unlock()
+	s.TotalFiles = total
+}
+
+// NUEVA FUNCIÓN: SetInProgress, para una mejor gestión de estado
+func (s *BackupStatus) SetInProgress(inProgress bool) {
+	s.mu.Lock()
+	defer s.mu.Unlock()
+	s.InProgress = inProgress
 }

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gobackup Web | Panel de Control</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Ruta corregida para el CSS -->
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
@@ -23,15 +22,15 @@
 
         <div class="stats-container">
             <div class="stat-card">
-                <div class="stat-value" id="totalFiles">0</div>
+                <div class="stat-value" id="total-files">0</div>
                 <div class="stat-label">Archivos totales</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value" id="copiedFiles">0</div>
+                <div class="stat-value" id="copied-files">0</div>
                 <div class="stat-label">Archivos copiados</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value" id="errorCount">0</div>
+                <div class="stat-value" id="errors">0</div>
                 <div class="stat-label">Errores</div>
             </div>
             <div class="stat-card">
@@ -40,19 +39,34 @@
             </div>
         </div>
 
+        <div id="selectionControls">
+            <div class="file-selection-group">
+                <button id="select-source-btn"><i class="fas fa-folder-open"></i> Seleccionar Origen</button>
+                <input type="text" id="source-path" placeholder="Ruta de la carpeta de origen">
+            </div>
+            <div class="file-selection-group">
+                <button id="select-dest-btn"><i class="fas fa-folder-plus"></i> Seleccionar Destino</button>
+                <input type="text" id="dest-path" placeholder="Ruta de la carpeta de destino">
+            </div>
+        </div>
+
         <div id="controls">
-            <button id="startBackup"><i class="fas fa-play"></i> Iniciar Backup</button>
-            <button id="resetApp" style="display:none;"><i class="fas fa-redo"></i> Reiniciar</button>
+            <button id="backup-btn" disabled><i class="fas fa-play"></i> Iniciar Backup</button>
+            <button id="restart-btn"><i class="fas fa-redo"></i> Reiniciar</button>
         </div>
 
         <div id="progressContainer">
-            <div id="progressBar">0%</div>
+            <div id="progressBar"></div>
         </div>
     </div>
 
     <div class="card">
         <h2><i class="fas fa-terminal"></i> Registro de actividad</h2>
-        <div id="logs"></div>
+        <div id="activity-log"></div>
+        <div class="log-controls">
+            <button id="clear-log-btn">Limpiar Log</button>
+            <button id="reconnect-btn">Reconectar</button>
+        </div>
     </div>
 
     <footer>
@@ -60,7 +74,6 @@
     </footer>
 </div>
 
-<!-- Ruta corregida para el JS -->
 <script src="/static/script.js"></script>
 </body>
 </html>
