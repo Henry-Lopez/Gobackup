@@ -298,3 +298,14 @@
 2025-08-22 13:06:39 [INFO] Escaneo completado. Archivos encontrados: 0
 2025-08-22 13:06:39 [INFO] Archivos detectados para copiar: 0
 2025-08-22 13:06:39 [INFO] No se encontraron archivos para copiar.
+2025-08-22 13:08:23 [INFO] ✅ Logger inicializado correctamente
+2025-08-22 13:08:23 [DEBUG] Logger en modo DEBUG activo
+2025-08-22 13:09:03 [INFO] Iniciando proceso de respaldo desde C:\Users\irisc\Desktop\holis hacia C:\Users\irisc\Desktop\lol
+2025-08-22 13:09:03 [INFO] Escaneando directorio: C:\Users\irisc\Desktop\holis (últimos 0 minutos)
+2025-08-22 13:09:03 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\holis\Nuevo Documento de Microsoft Word.docx
+2025-08-22 13:09:03 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\holis\ceasr gay.txt
+2025-08-22 13:09:03 [INFO] Escaneo completado. Archivos encontrados: 2
+2025-08-22 13:09:03 [INFO] Archivos detectados para copiar: 2
+2025-08-22 13:09:03 [INFO] Archivo copiado y verificado: Nuevo Documento de Microsoft Word.docx
+2025-08-22 13:09:03 [INFO] Archivo copiado y verificado: ceasr gay.txt
+2025-08-22 13:09:03 [INFO] Respaldo finalizado correctamente.
