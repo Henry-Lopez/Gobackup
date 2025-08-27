@@ -309,3 +309,232 @@
 2025-08-22 13:09:03 [INFO] Archivo copiado y verificado: Nuevo Documento de Microsoft Word.docx
 2025-08-22 13:09:03 [INFO] Archivo copiado y verificado: ceasr gay.txt
 2025-08-22 13:09:03 [INFO] Respaldo finalizado correctamente.
+2025-08-27 18:02:16 [INFO] ✅ Logger inicializado correctamente
+2025-08-27 18:02:16 [DEBUG] Logger en modo DEBUG activo
+2025-08-27 18:03:00 [INFO] Iniciando proceso de respaldo desde C:\Users\irisc\Desktop\Proyecto Progra hacia C:\Users\irisc\Desktop\cesar
+2025-08-27 18:03:00 [INFO] Escaneando directorio: C:\Users\irisc\Desktop\Proyecto Progra (últimos 0 minutos)
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\Sin título0.py
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\.gitignore
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\.idea\.gitignore
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\.idea\compiler.xml
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\.idea\dataSources\ef5dbcec-f098-4d35-8a2d-2429a8adec44\storage_v2\_src_\schema\db_oficial.wpBKXw.meta
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\.idea\dataSources\ef5dbcec-f098-4d35-8a2d-2429a8adec44.xml
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\.idea\dataSources.local.xml
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\.idea\dataSources.xml
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\.idea\encodings.xml
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\.idea\jarRepositories.xml
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\.idea\misc.xml
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\.idea\vcs.xml
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\.idea\workspace.xml
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\.mvn\wrapper\maven-wrapper.properties
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\HELP.md
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\mvnw
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\mvnw.cmd
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\pom.xml
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\EmsApplication.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\controller\CourseController.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\controller\DirectorController.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\controller\GradeController.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\controller\StudentController.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\controller\SubjectController.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\controller\TeacherController.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\dto\CourseDto.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\dto\DirectorDto.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\dto\GradeDto.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\dto\StudentDto.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\dto\SubjectDto.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\dto\TeacherDto.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\entity\Course.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\entity\Director.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\entity\Grade.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\entity\Student.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\entity\Subject.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\entity\Teacher.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\exception\ResourceNotFoundException.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\mapper\CourseMapper.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\mapper\DirectorMapper.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\mapper\GradeMapper.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\mapper\StudentMapper.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\mapper\SubjectMapper.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\mapper\TeacherMapper.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\repository\CourseRepository.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\repository\DirectorRepository.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\repository\GradeRepository.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\repository\StudentRepository.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\repository\SubjectRepository.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\repository\TeacherRepository.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\service\CourseService.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\service\DirectorService.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\service\GradeService.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\service\StudentService.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\service\SubjectService.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\service\TeacherService.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\service\impl\CourseServiceImpl.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\service\impl\DirectorServiceImpl.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\service\impl\GradeServiceImpl.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\service\impl\StudentServiceImpl.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\service\impl\SubjectServiceImpl.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\java\com\restapi\ems\service\impl\TeacherServiceImpl.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\main\resources\application.properties
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\src\test\java\com\restapi\ems\EmsApplicationTests.java
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\application.properties
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\EmsApplication.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\controller\CourseController.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\controller\DirectorController.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\controller\GradeController.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\controller\StudentController.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\controller\SubjectController.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\controller\TeacherController.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\dto\CourseDto.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\dto\DirectorDto.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\dto\GradeDto.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\dto\StudentDto.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\dto\SubjectDto.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\dto\TeacherDto.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\entity\Course.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\entity\Director.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\entity\Grade.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\entity\Student.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\entity\Subject.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\entity\Teacher.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\exception\ResourceNotFoundException.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\mapper\CourseMapper.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\mapper\DirectorMapper.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\mapper\GradeMapper.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\mapper\StudentMapper.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\mapper\SubjectMapper.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\mapper\TeacherMapper.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\repository\CourseRepository.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\repository\DirectorRepository.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\repository\GradeRepository.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\repository\StudentRepository.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\repository\SubjectRepository.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\repository\TeacherRepository.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\service\CourseService.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\service\DirectorService.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\service\GradeService.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\service\StudentService.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\service\SubjectService.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\service\TeacherService.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\service\impl\CourseServiceImpl.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\service\impl\DirectorServiceImpl.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\service\impl\GradeServiceImpl.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\service\impl\StudentServiceImpl.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\service\impl\SubjectServiceImpl.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems\target\classes\com\restapi\ems\service\impl\TeacherServiceImpl.class
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems-frontend.zip
+2025-08-27 18:03:00 [DEBUG] Archivo detectado (sin filtro de tiempo): C:\Users\irisc\Desktop\Proyecto Progra\ems.zip
+2025-08-27 18:03:00 [INFO] Escaneo completado. Archivos encontrados: 111
+2025-08-27 18:03:00 [INFO] Archivos detectados para copiar: 111
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\.idea\.gitignore
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: Sin título0.py
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\.idea\dataSources\ef5dbcec-f098-4d35-8a2d-2429a8adec44\storage_v2\_src_\schema\db_oficial.wpBKXw.meta
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\.gitignore
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\service\impl\DirectorServiceImpl.java
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\.idea\compiler.xml
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\entity\Course.java
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\entity\Student.java
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\entity\Director.java
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\entity\Grade.java
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\entity\Teacher.java
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\entity\Subject.java
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\exception\ResourceNotFoundException.java
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\mapper\CourseMapper.java
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\mapper\DirectorMapper.java
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\mapper\GradeMapper.java
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\mapper\StudentMapper.java
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\repository\DirectorRepository.java
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\mapper\TeacherMapper.java
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\repository\CourseRepository.java
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\mapper\SubjectMapper.java
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\repository\GradeRepository.java
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\repository\SubjectRepository.java
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\repository\TeacherRepository.java
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\service\CourseService.java
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\repository\StudentRepository.java
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\service\GradeService.java
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\service\SubjectService.java
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\service\StudentService.java
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\service\DirectorService.java
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\service\TeacherService.java
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\service\impl\CourseServiceImpl.java
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\dto\CourseDto.class
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\service\impl\GradeServiceImpl.java
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\service\impl\StudentServiceImpl.java
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\service\impl\SubjectServiceImpl.java
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\main\resources\application.properties
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\target\classes\application.properties
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\test\java\com\restapi\ems\EmsApplicationTests.java
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\EmsApplication.class
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\service\impl\TeacherServiceImpl.java
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\controller\StudentController.class
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\controller\CourseController.class
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\controller\DirectorController.class
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\controller\GradeController.class
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\controller\SubjectController.class
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\dto\GradeDto.class
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\dto\DirectorDto.class
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\dto\StudentDto.class
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\entity\Grade.class
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\controller\TeacherController.class
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\dto\TeacherDto.class
+2025-08-27 18:03:00 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\dto\SubjectDto.class
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\entity\Director.class
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\entity\Course.class
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\pom.xml
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\.idea\dataSources.local.xml
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\.idea\encodings.xml
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\.idea\dataSources.xml
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\.idea\jarRepositories.xml
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\.idea\misc.xml
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\.idea\dataSources\ef5dbcec-f098-4d35-8a2d-2429a8adec44.xml
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\.idea\vcs.xml
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\.mvn\wrapper\maven-wrapper.properties
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\.idea\workspace.xml
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\HELP.md
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\EmsApplication.java
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\controller\TeacherController.java
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\controller\CourseController.java
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\controller\GradeController.java
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\controller\DirectorController.java
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\mvnw.cmd
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\controller\StudentController.java
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\mvnw
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\dto\GradeDto.java
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\dto\CourseDto.java
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\dto\DirectorDto.java
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\controller\SubjectController.java
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\entity\Student.class
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\mapper\CourseMapper.class
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\exception\ResourceNotFoundException.class
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\entity\Subject.class
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\entity\Teacher.class
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\dto\SubjectDto.java
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\mapper\DirectorMapper.class
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\dto\StudentDto.java
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\mapper\GradeMapper.class
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\mapper\StudentMapper.class
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\repository\CourseRepository.class
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\src\main\java\com\restapi\ems\dto\TeacherDto.java
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\repository\DirectorRepository.class
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\mapper\TeacherMapper.class
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\mapper\SubjectMapper.class
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\repository\StudentRepository.class
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\repository\SubjectRepository.class
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\repository\GradeRepository.class
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\repository\TeacherRepository.class
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\service\CourseService.class
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\service\DirectorService.class
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\service\GradeService.class
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\service\StudentService.class
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\service\SubjectService.class
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\service\TeacherService.class
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\service\impl\GradeServiceImpl.class
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\service\impl\CourseServiceImpl.class
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\service\impl\DirectorServiceImpl.class
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems.zip
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\service\impl\StudentServiceImpl.class
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\service\impl\TeacherServiceImpl.class
+2025-08-27 18:03:01 [INFO] Archivo copiado y verificado: ems\target\classes\com\restapi\ems\service\impl\SubjectServiceImpl.class
+2025-08-27 18:03:02 [INFO] Archivo copiado y verificado: ems-frontend.zip
+2025-08-27 18:03:02 [INFO] Respaldo finalizado correctamente.

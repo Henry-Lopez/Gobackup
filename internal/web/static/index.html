@@ -41,12 +41,22 @@
 
         <div id="selectionControls">
             <div class="file-selection-group">
-                <button id="select-source-btn"><i class="fas fa-folder-open"></i> Seleccionar Origen</button>
-                <input type="text" id="source-path" placeholder="Ruta de la carpeta de origen">
+                <div class="drop-zone" id="source-drop-zone">
+                    <i class="fas fa-folder-open"></i>
+                    <p>Arrastra y suelta la carpeta de origen aquí</p>
+                </div>
+                <input type="text" id="source-path" placeholder="Ruta de la carpeta de origen" readonly>
+                <input type="file" id="source-input" webkitdirectory directory multiple style="display:none;">
+                <button id="select-source-btn"><i class="fas fa-folder"></i> Seleccionar carpeta origen</button>
             </div>
             <div class="file-selection-group">
-                <button id="select-dest-btn"><i class="fas fa-folder-plus"></i> Seleccionar Destino</button>
-                <input type="text" id="dest-path" placeholder="Ruta de la carpeta de destino">
+                <div class="drop-zone" id="dest-drop-zone">
+                    <i class="fas fa-folder-plus"></i>
+                    <p>Arrastra y suelta la carpeta de destino aquí</p>
+                </div>
+                <input type="text" id="dest-path" placeholder="Ruta de la carpeta de destino" readonly>
+                <input type="file" id="dest-input" webkitdirectory directory multiple style="display:none;">
+                <button id="select-dest-btn"><i class="fas fa-folder"></i> Seleccionar carpeta destino</button>
             </div>
         </div>
 
@@ -57,6 +67,18 @@
 
         <div id="progressContainer">
             <div id="progressBar"></div>
+        </div>
+    </div>
+
+    <div class="info-box" id="pre-backup-info-box">
+        <h3>Información Pre-Backup</h3>
+        <div class="stat-card">
+            <div class="stat-value" id="files-size">0 MB</div>
+            <div class="stat-label">Tamaño de origen</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value" id="disk-space">? GB</div>
+            <div class="stat-label">Espacio libre</div>
         </div>
     </div>
 
